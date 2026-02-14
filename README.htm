@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Animation all */
+         @keyframes fadeIn {
+         from { opacity: 0; }
+         to { opacity: 1; }
+         }
+         
+        /*fadeIn for all buttons*/
+.main-nav, .hero, .about-creator, .works, .content1, .LOGO {
+  animation: fadeIn 1s ease-in-out;
+}
+
+       /*'float' animation for all buttons */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+     /*hero button*/
+        .hero button {
+        animation: float 3s ease-in-out infinite;
+}
+
+     /*works items */
+        @keyframes scaleUp {
+        from { transform: scale(0.8); }
+        to { transform: scale(1); }
+}
+
+     .works-item {
+      animation: scaleUp 0.5s ease-in-out;
+      animation-delay: 0.3s; /* Delay to stagger the animations */
+}
+
+/* Ensure animations only play once when the page loads */
+.main-nav, .hero, .works, .content1 {
+  animation-fill-mode: forwards;
+}
+
+  
+ 
+        body { 
+            background-image: linear-gradient(to bottom right, #3b4675,#070b50,#000);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+        }
+        
+        div { 
+            background-color: transparent;
+            padding: 3px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }                
+        nav {      
+            display: flex;
+            justify-content: space-between;                        
+            background-color: transparent;            
+        }
+        nav button{
+            background-image: linear-gradient(to bottom left, #0016e5,#1a1641,#000);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            padding: 5px;
+            font-family: courier;    
+            color: #e5c626;        
+            font-size: 10px;           
+            border: #e5c626 solid 1px;
+            border-radius: 25px;           
+        }
+        header {
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height; 40px;                     
+        }
+        section {
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            margin: 30px;
+            padding: 10px;
+            max-height: 100%;
+            text-align: center;                                                             
+        }                                   
+        section p { 
+            font-family: fantasy;          
+            color: #4f468bde;
+        }
+        section q {
+            font-family: cursive; 
+            color: #404effba;
+        }
+        section ul li { 
+            color:#404effba;
+            font-size:10px;"            
+            font-family: fantasy;
+        }
+        section button{
+            background-color: transparent;
+            padding: 5px;
+            font-family: courier;    
+            color: #342b81de;        
+            font-size: 10px;           
+            border: #342b81de solid 1px;
+            border-radius: 25px;    
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    
+    <section class="content1">
+        <img src="them.jpg" alt="A character from a game" style="max-width: 100%;
+            height: 150px;
+            clip-path: circle(40%);">
+        <p style="color:#1b45a14e;">Guide for traveler (README)</p>
+        <p>PROJECT TITLE: <br><q>Welcome</q></p>
+        <p style="color:#4f468bde;font-size:10px;"> CONTENT:</p>
+        <ul>
+                <li style="text-align:left;">HOME (A brief description about the creator)</li><br>
+                <li style="text-align: left;">PORTFOLIO (A collection of my works, brief description is included)</li><br>
+                <li style="text-align: left;">CONTACT(Contact info.)</li>        
+        </ul>
+        
+        <p style="color:#4f468bde;font-size:10px;">
+            MADE WITH:
+        </p>        
+        
+        <ul>           
+           <li style="text-align:left;"><abbr title="Hyper Text Mark-up Language">HTML</abbr></li>
+           <li style="text-align:left;"><abbr title="Cast-cading Style Sheet">CSS</abbr></li>
+           <li style="text-align:left;">A sprinkle of JavaScript</li>
+           
+        </ul>
+        
+        <p style="color:#4f468bde;font-size:10px;"> ADDITIONAL NOTES: </p>
+        <ul>
+            <li style="text-align:left;">Press the buttons to direct/redirect you to the destination</li>
+            <li style="text-align:left;">The webpage's dialogues is programmed like a game.</li>
+        </ul>
+        
+        <a href="homepage.htm"><button>Start Reading</button></a>
+        
+    </section>
+    
+</body>
+</html>
