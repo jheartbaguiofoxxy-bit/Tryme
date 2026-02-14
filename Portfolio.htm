@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Animation all */
+         @keyframes fadeIn {
+         from { opacity: 0; }
+         to { opacity: 1; }
+         }
+         
+        /*fadeIn for all buttons*/
+.main-nav, .hero, .about-creator, .works, .content1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+       /*'float' animation for all buttons */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+     /*hero button*/
+        .hero button {
+        animation: float 3s ease-in-out infinite;
+}
+
+     /*works items */
+        @keyframes scaleUp {
+        from { transform: scale(0.8); }
+        to { transform: scale(1); }
+}
+
+     .works-item {
+      animation: scaleUp 0.5s ease-in-out;
+      animation-delay: 0.3s; /* Delay to stagger the animations */
+}
+
+/* Ensure animations only play once when the page loads */
+.main-nav, .hero, .works, .content1 {
+  animation-fill-mode: forwards;
+}
+
+  
+ 
+        body { 
+            background-image: linear-gradient(to bottom right, #3b4675,#070b50,#000);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+        }
+        
+        div { 
+            background-color: transparent;
+            padding: 3px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }                
+        nav {      
+            display: flex;
+            justify-content: space-between;                        
+            background-color: transparent;            
+        }
+        nav button{           
+            background-image: linear-gradient(to bottom left, #0016e5,#1a1641,#000);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            padding: 5px;
+            font-family: courier;    
+            color: #e5c626;        
+            font-size: 10px;           
+            border: #e5c626 solid 1px;
+            border-radius: 25px;            
+        }
+        header {
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height; 40px;                     
+        }
+        section {
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            margin: 30px;
+            padding: 10px;
+            max-height: 100%;
+            text-align: center;                                                             
+        }                                   
+        section p { 
+            font-family: fantasy;  
+            font-size: 12px;      
+            color: #4f468bde;
+            text-align: justify;
+            padding: 3px;
+        }
+        section q {
+            font-family: cursive; 
+            color: #4c4fe3;
+        }
+        section button {
+            background-color: transparent;
+            padding: 5px;
+            font-family: courier;    
+            color: #342b81de;        
+            font-size: 10px;           
+            border: #342b81de solid 1px;
+            border-radius: 25px;    
+        }   
+        section details {
+            font-family: cursive;
+            font-size: 12px;
+            color: #342b81de;
+        }     
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.png" alt="LOGO of Baguio">
+        <div class="main-nav">
+        <nav>
+            
+                <a href="homepage.htm"><button>HOME</button></a>
+                <a href="Portfolio.htm"><button>PORTFOLIO</button></a>
+                <a href="contact.htm"><button>CONTACT</button></a>           
+        </nav>
+        </div>
+    </header>
+    
+    <section class="content1">
+        <img src="R48.jpg" alt="A character from a game" style="max-width: 100%;
+            height: 100px;
+            clip-path: circle(30%);">   
+              
+            <p style="margin:30px;padding:3px;text-align:center;"> Oh! You want to see my works ? Sure. </p>              
+        
+        <img src="calculus.jpg" alt="Math art" style="width:200px;height:150px;padding:0px;border-radius:20px;border:#e09d4b solid 2px;">
+        <details> 
+        <summary>
+            MATH ART
+        </summary>
+        <p style="margin:30px;padding:3px;text-align:justify;">
+            This is the most recent artwork I've done, made in may 2024. This took me around 3-4 hours, and it's the least that I like. If I had given much time, I would've enjoyed the process of making this art, but oh well— what can I do, punctuality have points. My wrists took around 2-3 days to recover though, very painful...   <br> Also,     
+            I wanna share the concept behind this art, the theme was <q>Rational Function: Graphing an Asymptote</q> so an idea came to my mind from the novels or books that I've read is that some characters would say <q>The line where the sky meets the sea</q> Infact, the sky and the sea will never meet each other no matter how close they can get like an <q>Asymptote</q>. 
+               
+        </p></details><br>
+        
+        <img src="science.jpg" alt="Glucose project" style="width:200px;height:150px;padding:0px;border-radius:20px;border:#e09d4b solid 2px;">
+        <details>
+            <summary>SCIENCE OUTPUT</summary>
+            <p style="margin:30px;padding:3px;text-align:center:"> Most of what we eat has a nutrient of biomolecules called <q>Glucose</q>. The output's theme is pirates, I don't know why but it seems to me I've been hyperfixated with the idea of pirates recently. Even though the topic is all about biomolecules— I just think giving the project with a different concept is awesome, don't you think so too? </p>
+        </details><br>
+        
+        <img src="mapeh.jpg" alt="mapeh painting" style="width:200px;max-height:100%;padding:0px;border-radius:20px;border:#e09d4b solid 2px;">
+        <details>
+            <summary>
+                MAPEH OUTPUT (Ethereal Woman)
+            </summary>
+            <p style="margin:30px;padding:3px;text-align:justify;"> This output is a classic to me, it's my very first painting on an illustration board! It may not be shocking to you but hey, that's a first for me. The reason about the title being <q>Ethereal Woman</q> is that somehow I saw this beautiful lady in my dreams, I just think her beauty is out of this world which made me paint this expressionism art.</p>
+        </details><br>
+        
+        <img src="painting.jpg" alt="watercolor painting" style="width:200px;max-height:100%;padding:0px;border-radius:20px;border:#e09d4b solid 2px;">
+        <details>
+            <summary>
+                Materials Does Not Matter
+            </summary>
+            <p style="margin:30px;padding:3px;text-align:justify;"> I saw my old cheap store-bought watercolors unused in my room, I thought of making use of it for fun. Sometimes I would think you need expensive materials to get good art, but once I started painting this and trusted the process I realized you don't need expensive materials at all. Although the quality may not be good but when you have experience and knowledge, you're good to go. Being a creative, I love the part of me where I am able to achieve these kind of accomplishments.
+            </p>
+        </details><br>
+        
+        <p style="text-align:center;font-size:12px;margin:30px;padding:3px;">       Did you find something interesting about my work?</p>        
+        <a href="homepage.htm"><button>←Home</button></a><br><br>
+        
+    </section>    
+    
+</body>
+</html>
